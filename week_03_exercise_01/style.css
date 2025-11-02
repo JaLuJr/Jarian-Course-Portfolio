@@ -1,0 +1,35 @@
+/* Universal box-sizing rule */
+* {
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #5194d7;
+  margin: 40px;
+  padding: 20px;
+}
+
+/* Card styling */
+.card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 32px;
+  background-color: #94cdf2;
+  border: 4px solid #00bbd472;
+  border-radius: 8px;
+}
+
+/* Heading and paragraph styling */
+.card h1 {
+  color: #333333;
+  font-size: 2em;
+  margin-bottom: 16px;
+}
+
+.card p {
+  color: #ffc89e;
+  font-size: 1.1em;
+  margin-top: 0;
+}
