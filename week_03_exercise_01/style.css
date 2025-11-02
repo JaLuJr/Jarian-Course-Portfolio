@@ -7,8 +7,8 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #5194d7;
-  margin: 40px;
-  padding: 20px;
+  margin: 2rem;
+  padding: 1rem;
 }
 
 /* Card styling */
@@ -29,7 +29,7 @@ body {
 }
 
 .card p {
-  color: #ffc89e;
+  color: #333333;
   font-size: 1.1em;
   margin-top: 0;
 }
