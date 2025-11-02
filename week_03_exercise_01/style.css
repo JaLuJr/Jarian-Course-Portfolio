@@ -1,4 +1,4 @@
-/* Universal box-sizing rule */
+/* Global box-sizing */
 * {
   box-sizing: border-box;
 }
