@@ -1,0 +1,67 @@
+/* Color palette inspired by Bluey + Gumball */
+:root {
+  --bluey-blue: #4da6ff;
+  --bluey-sky: #a7d8f9;
+  --gumball-pink: #ff6ec7;
+  --gumball-yellow: #ffe066;
+  --gumball-green: #66ff99;
+  --text-dark: #333;
+  --white: #fff;
+  --shadow: rgba(0,0,0,0.25);
+}
+
+/* Base styles */
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 18px; /* larger default text */
+  line-height: 1.6;
+  margin: 0;
+  background: linear-gradient(135deg, var(--bluey-sky), var(--gumball-yellow));
+  color: var(--text-dark);
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5rem; /* big name */
+  margin: 0;
+}
+h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+/* Header + Navigation */
+header {
+  background: var(--bluey-blue);
+  color: var(--white);
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+nav a:hover,
+nav a:focus {
+  background-color: var(--gumball-pink);
+  transform: scale(1.1);
+}
+
+/* Sections */
+section {
+  padding: 40px;
+}
+
