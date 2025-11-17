@@ -1,0 +1,96 @@
+/* Root color palette inspired by Bluey + Gumball */
+:root {
+  --bluey-blue: #4da6ff;
+  --bluey-sky: #a7d8f9;
+  --gumball-pink: #ff6ec7;
+  --gumball-yellow: #ffe066;
+  --gumball-green: #66ff99;
+  --text-dark: #333;
+  --white: #fff;
+  --shadow: rgba(0,0,0,0.2);
+}
+
+body {
+  font-family: 'Comic Sans MS', 'Trebuchet MS', sans-serif;
+  background: linear-gradient(135deg, var(--bluey-sky), var(--gumball-yellow));
+  text-align: center;
+  padding: 40px;
+  color: var(--text-dark);
+}
+
+/* General button style */
+button {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin: 12px;
+  transition: all 0.3s ease;
+}
+
+/* Button 01 – Bluey Calm Fade */
+.button-01 {
+  background: var(--bluey-blue);
+  color: var(--white);
+}
+.button-01:hover {
+  background: var(--bluey-sky);
+  color: var(--text-dark);
+  transform: scale(1.05);
+}
+
+/* Button 02 – Gumball Bounce */
+.button-02 {
+  background: var(--gumball-pink);
+  color: var(--white);
+}
+.button-02:hover {
+  transform: translateY(-6px) scale(1.1);
+  box-shadow: 0 8px 16px var(--shadow);
+}
+
+/* Button 03 – Slide Effect */
+.button-03 {
+  background: var(--gumball-yellow);
+  color: var(--text-dark);
+}
+.button-03:hover {
+  transform: translateX(8px);
+  background: var(--bluey-blue);
+  color: var(--white);
+}
+
+/* Button 04 – Shadow Lift */
+.button-04 {
+  background: var(--gumball-green);
+  color: var(--text-dark);
+}
+.button-04:hover {
+  box-shadow: 0 6px 12px var(--shadow);
+  transform: translateY(-4px);
+  background: var(--gumball-pink);
+  color: var(--white);
+}
+
+/* Button 05 – Glow Pulse */
+.button-05 {
+  background: var(--bluey-sky);
+  color: var(--text-dark);
+}
+.button-05:hover {
+  box-shadow: 0 0 15px var(--bluey-blue);
+  transform: scale(1.08);
+  background: var(--gumball-yellow);
+}
+
+/* Button 06 – Cartoon Flip */
+.button-06 {
+  background: var(--gumball-pink);
+  color: var(--white);
+}
+.button-06:hover {
+  transform: rotate(-5deg) scale(1.1);
+  background: var(--gumball-green);
+  color: var(--text-dark);
+}
