@@ -1,0 +1,191 @@
+/* Reset + Base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --black: #000000;
+  --orange: #FF8C00;
+  --blue: #1E3A8A;
+  --coral: #FF6F61;
+  --gold: #FFD700;
+  --ink: #111111;
+}
+
+body {
+  font-family: "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 2;
+  color: var(--ink);
+  background-color: #f0f8ff; /* soft sky blue background */
+  min-height: 100vh;
+  padding: 32px 0;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  max-width: 980px;
+  width: 100%;
+  padding: 0 16px;
+}
+
+/* Titles */
+.page-title, h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 24px;
+  color: var(--coral);
+  text-shadow: 2px 2px var(--gold);
+}
+
+h2 { color: var(--blue); margin: 16px 0 8px; }
+
+/* Links */
+a { text-decoration: none; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; }
+a:focus { outline: 2px solid var(--blue); outline-offset: 2px; }
+
+/* Active nav link */
+nav a[aria-current="page"] {
+  background: rgba(255,255,255,0.25);
+  color: var(--gold);
+  border-radius: 6px;
+}
+
+/* ---------------- NAV STYLES ---------------- */
+
+/* Tiger stripe pattern */
+.tiger-stripe {
+  background: repeating-linear-gradient(
+    90deg,
+    var(--black) 0px,
+    var(--black) 40px,
+    var(--orange) 40px,
+    var(--orange) 80px,
+    var(--blue) 80px,
+    var(--blue) 120px
+  );
+  color: white;
+}
+
+/* 1. Custom nav (Home & Contact) */
+.nav-custom {
+  background: repeating-linear-gradient(
+    90deg,
+    var(--black) 0px,
+    var(--black) 40px,
+    var(--orange) 40px,
+    var(--orange) 80px,
+    var(--blue) 80px,
+    var(--blue) 120px
+  );
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 12px 0;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+.nav-custom ul { list-style: none; display: flex; gap: 24px; }
+.nav-custom a { color: #fff; font-weight: bold; padding: 8px 16px; border-radius: 6px; }
+.nav-custom a:hover { background: rgba(255,255,255,0.25); transform: scale(1.08); }
+
+/* 2. Simple vertical nav (About) */
+.nav-simple {
+  background: repeating-linear-gradient(
+    90deg,
+    var(--black) 0px,
+    var(--black) 40px,
+    var(--orange) 40px,
+    var(--orange) 80px,
+    var(--blue) 80px,
+    var(--blue) 120px
+  );
+  width: 220px;
+  margin: 0 24px 24px;
+  float: left;
+  padding: 12px;
+  border-radius: 8px;
+}
+.nav-simple ul { list-style: none; }
+.nav-simple a {
+  display: block; padding: 8px 16px; color: #fff;
+  border: 1px solid rgba(255,255,255,0.25); border-radius: 6px; margin-bottom: 8px;
+}
+.nav-simple a:hover { background-color: var(--coral); color: #fff; }
+.nav-simple + main { margin-left: 268px; }
+
+/* 3. Horizontal nav (Projects) */
+.nav-horizontal {
+  background: repeating-linear-gradient(
+    90deg,
+    var(--black) 0px,
+    var(--black) 40px,
+    var(--orange) 40px,
+    var(--orange) 80px,
+    var(--blue) 80px,
+    var(--blue) 120px
+  );
+  padding: 0 32px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+.nav-horizontal ul { list-style: none; display: flex; justify-content: center; gap: 32px; }
+.nav-horizontal a { display: block; padding: 14px 0; color: #fff; font-weight: bold; }
+.nav-horizontal a:hover { color: var(--gold); transform: scale(1.08); }
+
+/* Cards / lists */
+.card {
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  padding: 16px;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  margin-bottom: 16px;
+}
+.card a { color: var(--blue); border-bottom: 1px dashed var(--blue); }
+.card a:hover { color: #fff; background: var(--coral); border-bottom-color: transparent; transform: translateY(-2px); }
+
+/* Buttons */
+.btn {
+  display: inline-block; padding: 8px 12px; border: 1px solid var(--blue);
+  border-radius: 6px; color: var(--blue);
+  transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+}
+.btn:hover { transform: translateY(-2px); background-color: var(--coral); color: #fff; }
+
+/* Gallery */
+.gallery-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px; padding: 20px;
+}
+.gallery-item {
+  background: #fafafa; border: 2px solid var(--gold); border-radius: 12px;
+  padding: 12px; text-align: center; transition: transform 0.3s ease;
+}
+.gallery-item:hover { transform: translateY(-6px); border-color: var(--orange); }
+.gallery-item img {
+  max-width: 180px; height: auto; border-radius: 8px; border: 3px solid var(--blue); margin-bottom: 12px;
+}
+.gallery-item p { font-size: 0.95rem; color: #333; font-weight: bold; }
+
+/* Footer */
+footer { margin-top: 24px; text-align: center; color: #666; }
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 992px) {
+  .nav-simple { float: none; width: 100%; margin: 0 0 16px; }
+  .nav-simple + main { margin-left: 0; }
+}
+
+@media (max-width: 768px) {
+  main { padding: 0 12px; }
+  .nav-horizontal ul { gap: 16px; }
+  .nav-custom ul { gap: 12px; flex-wrap: wrap; }
+  .page-title, h1 { font-size: 2.1rem; }
+}
+
+@media (max-width: 480px) {
+  .nav-horizontal a { padding: 12px 0; }
+  .gallery-grid { grid-template-columns: 1fr; }
+  .page-title, h1 { font-size: 1.8rem; }
+}
