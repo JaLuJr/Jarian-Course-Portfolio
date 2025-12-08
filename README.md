@@ -4,4 +4,6 @@
 
 <a href="week-05-exercise-01/">Week 05 Exercise 01: Interactive Buttons</a>
 
+<a href="week-06-exercise-01/">Week 06 Exercise 01: Navigation Lab</a>
+
 <a href="project-01/">Project 01: Personal Landing Page</a>
